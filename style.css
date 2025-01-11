@@ -180,12 +180,12 @@ button:hover {
     list-style-type: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
 }
 
 .box-li {
-    flex: 1 1 calc(50% - 20px);
+    width: 90%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--box-color);
     border-radius: 5px;
@@ -195,16 +195,6 @@ button:hover {
 
 .box-li:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 800px) {
-    .boxes {
-        padding: 15% 5%;
-    }
-
-    .box-li {
-        flex: 1 1 100%;
-    }
 }
 
 
